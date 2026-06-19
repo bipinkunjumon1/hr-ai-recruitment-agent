@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+langgraph
+langchain
+langchain-google-genai
+google-generativeai
+sqlalchemy
+psycopg2-binary
+python-multipart
+pydantic
+pymupdf
+python-docx
+paddleocr
+paddlepaddle
+python-dotenv

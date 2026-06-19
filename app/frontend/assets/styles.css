@@ -1,0 +1,146 @@
+/* ===== TalentFlow Theme ===== */
+/* ===== TalentFlow Theme ===== */
+:root {
+    --tf-primary: #6366f1;
+    --tf-primary-dark: #4f46e5;
+    --tf-success: #10b981;
+    --tf-warning: #f59e0b;
+    --tf-danger: #ef4444;
+    --tf-radius: 16px;
+    --tf-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+/* Hide menu + footer only — keep header so sidebar toggle works */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+[data-testid="stDecoration"] {display: none;}
+
+/* Keep the sidebar reliably visible */
+[data-testid="stSidebar"] {
+    visibility: visible !important;
+    transform: none !important;
+    background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);
+}
+/* Hide Streamlit's auto-generated page nav (keep our custom sidebar) */
+[data-testid="stSidebarNav"] { display: none; }
+
+[data-testid="stSidebar"] * { color: #e0e7ff !important; }
+[data-testid="stSidebar"] .stButton button {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 12px;
+    color: #fff !important;
+    width: 100%;
+}
+[data-testid="stSidebar"] .stButton button:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.block-container {
+    padding-top: 2rem;
+    max-width: 1300px;
+}
+
+/* ===== KPI Cards ===== */
+.kpi-card {
+    background: #ffffff;
+    border-radius: var(--tf-radius);
+    padding: 1.4rem 1.6rem;
+    box-shadow: var(--tf-shadow);
+    border: 1px solid #e2e8f0;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.kpi-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(99,102,241,0.18);
+}
+.kpi-icon {
+    width: 46px; height: 46px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 12px; font-size: 1.4rem; margin-bottom: .8rem;
+}
+.kpi-value { font-size: 2rem; font-weight: 700; color: #0f172a; line-height: 1; }
+.kpi-label { color: #475569; font-size: .85rem; margin-top: .3rem; }
+.kpi-delta { font-size: .78rem; font-weight: 600; margin-top: .4rem; }
+.up { color: var(--tf-success); } .down { color: var(--tf-danger); }
+
+/* ===== Generic Card ===== */
+.tf-card {
+    background: #ffffff; border-radius: var(--tf-radius);
+    padding: 1.5rem; box-shadow: var(--tf-shadow);
+    border: 1px solid #e2e8f0; margin-bottom: 1rem;
+    color: #0f172a;
+}
+.tf-card h4 { margin: 0 0 1rem 0; font-weight: 700; color: #0f172a; }
+.tf-card p { color: #334155; }
+
+/* ===== Badges ===== */
+.badge {
+    display: inline-block; padding: .25rem .7rem;
+    border-radius: 999px; font-size: .72rem; font-weight: 700;
+    letter-spacing: .3px;
+}
+.badge-success { background: #d1fae5; color: #065f46; }
+.badge-warning { background: #fef3c7; color: #92400e; }
+.badge-danger  { background: #fee2e2; color: #991b1b; }
+.badge-info    { background: #e0e7ff; color: #3730a3; }
+
+/* ===== Progress bar ===== */
+.tf-progress {
+    background: #e2e8f0; border-radius: 999px; height: 10px;
+    overflow: hidden; width: 100%;
+}
+.tf-progress > span {
+    display: block; height: 100%; border-radius: 999px;
+    background: linear-gradient(90deg, var(--tf-primary), var(--tf-success));
+}
+
+/* ===== Activity list ===== */
+.activity-item {
+    display: flex; gap: .8rem; padding: .7rem 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+.activity-item:last-child { border-bottom: none; }
+.activity-time { color: #94a3b8; font-size: .75rem; margin-left: auto; }
+
+/* ===== Brand ===== */
+.brand {
+    display: flex; align-items: center; gap: .6rem;
+    padding: .5rem 0 1.5rem 0;
+}
+.brand-logo {
+    width: 40px; height: 40px; border-radius: 11px;
+    background: linear-gradient(135deg, #818cf8, #6366f1);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem;
+}
+.brand-name { font-size: 1.25rem; font-weight: 800; }
+.brand-tag { font-size: .7rem; opacity: .7; }
+
+/* ===== Leaderboard row ===== */
+.rank-row {
+    display: flex; align-items: center; gap: 1rem;
+    background: #fff; border-radius: 14px; padding: 1rem 1.3rem;
+    box-shadow: var(--tf-shadow); margin-bottom: .7rem;
+    border-left: 4px solid var(--tf-primary);
+}
+.rank-medal { font-size: 1.5rem; min-width: 40px; text-align: center; }
+.rank-name { font-weight: 700; }
+.rank-score { font-weight: 800; font-size: 1.3rem; color: var(--tf-primary); }
+
+/* ===== Empty state ===== */
+.empty-state {
+    text-align: center; padding: 3rem 1rem; color: #94a3b8;
+}
+.empty-state .icon { font-size: 3rem; }
+
+/* ===== Dropzone hint ===== */
+[data-testid="stFileUploaderDropzone"] {
+    border: 2px dashed var(--tf-primary) !important;
+    border-radius: var(--tf-radius) !important;
+    background: rgba(99,102,241,0.04) !important;
+}

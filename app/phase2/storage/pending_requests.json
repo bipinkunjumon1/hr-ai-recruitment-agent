@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_name": "aiagent",
+    "candidate_email": "aiagent801@gmail.com",
+    "subject": "HR-AI Reschedule Request",
+    "body": "I have a medical emergency.\r\nCan we reschedule?",
+    "reason": "Medical emergency",
+    "confidence": 99,
+    "message_id": "19ed6439c2dfb1e8",
+    "thread_id": "19ed6439c2dfb1e8",
+    "request_id": 1,
+    "status": "rejected"
+  },
+  {
+    "candidate_name": "aiagent",
+    "candidate_email": "aiagent801@gmail.com",
+    "subject": "Fwd: HR-AI Reschedule Request",
+    "body": "I have a medical emergency.\r\nCan we reschedule?",
+    "reason": "Medical emergency",
+    "confidence": 99,
+    "message_id": "19ed644c17b37ba2",
+    "thread_id": "19ed6439c2dfb1e8",
+    "request_id": 2,
+    "status": "approved"
+  },
+  {
+    "candidate_name": "aiagent",
+    "candidate_email": "aiagent801@gmail.com",
+    "subject": "[HR-AI]",
+    "body": "Hello HR,\r\n\r\nI am unable to attend the interview tomorrow.\r\n\r\nCould you please reschedule the interview?\r\n\r\nThanks,\r\nJohn",
+    "reason": "Candidate requests to reschedule the interview",
+    "confidence": 99,
+    "message_id": "19ed65d2890d4a66",
+    "thread_id": "19ed65d2890d4a66",
+    "request_id": 3,
+    "status": "approved"
+  },
+  {
+    "candidate_name": "aiagent",
+    "candidate_email": "aiagent801@gmail.com",
+    "subject": "HR-AI interview timing problem",
+    "body": "Hi,\r\n\r\nSomething urgent has come up and I won't be able to make the current\r\ninterview slot.\r\n\r\nCan we arrange another suitable time next week?\r\n\r\nThank you.",
+    "reason": "Urgent personal matter",
+    "confidence": 98,
+    "message_id": "19ed954681849241",
+    "thread_id": "19ed954681849241",
+    "request_id": 4,
+    "status": "approved"
+  },
+  {
+    "candidate_name": "aiagent",
+    "candidate_email": "aiagent801@gmail.com",
+    "subject": "Fwd: [HR-AI]",
+    "body": "Hello HR,\r\n\r\nI am unable to attend the interview tomorrow.\r\n\r\nCould you please reschedule the interview?\r\n\r\nThanks,\r\nJohn",
+    "reason": "Unable to attend the original interview time",
+    "confidence": 98,
+    "message_id": "19ed9c70e51170f4",
+    "thread_id": "19ed65d2890d4a66",
+    "request_id": 5,
+    "status": "approved"
+  }
+]

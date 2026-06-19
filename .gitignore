@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+myvenv/
+venv/
+env/
+
+# Environment Variables
+.env
+
+# Google OAuth
+token.json
+credentials.json
+
+# Uploads
+uploads/
+
+# Logs
+*.log
+
+# SQLite
+*.db
+*.sqlite3
+
+# Streamlit cache
+.streamlit/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+
+# Phase 2 Storage
+phase2/storage/pending_requests.json
+
+# Secrets
+*.pem
+*.key
