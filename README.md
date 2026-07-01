@@ -21,7 +21,7 @@ AI-powered recruitment platform built using FastAPI, Streamlit, Groq LLM, Gmail 
 - Google Calendar API
 - Gmail API
 - Python
-- LangGraph (if used)
+- LangGraph
 
 ## Run Backend
 
